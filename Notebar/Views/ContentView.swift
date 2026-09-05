@@ -26,11 +26,16 @@ struct ContentView: View {
     @State var firstResponder: FirstResponders? = FirstResponders.textEditor
     @ObservedObject var themeManager = ThemeManager()
     @ObservedObject var textManager = TextManager()
+    @ObservedObject var shortcutManager: ShortcutManager
+
+    init(shortcutManager: ShortcutManager) {
+        self.shortcutManager = shortcutManager
+    }
     
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
-                HeaderView(themeManager: themeManager)
+                HeaderView(themeManager: themeManager, shortcutManager: shortcutManager)
                 ZStack(alignment: .topLeading) {
                     TextEditor(text: $textManager.text)
                         .firstResponder(id: FirstResponders.textEditor, firstResponder: $firstResponder)
@@ -48,7 +53,6 @@ struct ContentView: View {
                 .background(themeManager.bgColor)
             }
             ZStack {
-//                if themeManager.isThemeEditor {
                     Color(.shadowColor)
                         .opacity(themeManager.isThemeEditor ? 0.5 : 0)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -61,17 +65,17 @@ struct ContentView: View {
                         .frame(width: 240, height: 240)
                         .offset(y: themeManager.isThemeEditor ? 0 : 400)
                         .animation(.easeOut(duration: 0.25))
-//                }
-                
             }
         }
         .background(Color(.windowBackgroundColor))
+        .onReceive(NotificationCenter.default.publisher(for: AppDelegate.didOpenNotification)) { _ in
+            firstResponder = FirstResponders.textEditor
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(shortcutManager: ShortcutManager())
     }
 }
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69BFB696304B8B1E007EAB18 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BFB695304B8B1E007EAB18 /* ShortcutManager.swift */; };
 		C803A1EF25CF941200366CEB /* MbSwiftUIFirstResponder in Frameworks */ = {isa = PBXBuildFile; productRef = C803A1EE25CF941200366CEB /* MbSwiftUIFirstResponder */; };
 		C803A1F225CF98DF00366CEB /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A1F125CF98DF00366CEB /* TextManager.swift */; };
 		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69BFB695304B8B1E007EAB18 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		C803A1F125CF98DF00366CEB /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				C836C55825A0171500BEB83F /* AppDelegate.swift */,
 				C803A1F125CF98DF00366CEB /* TextManager.swift */,
 				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
+				69BFB695304B8B1E007EAB18 /* ShortcutManager.swift */,
 				C82C211225C63CA800CCCDF7 /* Views */,
 				C836C55C25A0171600BEB83F /* Assets.xcassets */,
 				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
@@ -132,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					C836C55425A0171500BEB83F = {
 						CreatedOnToolsVersion = 12.2;
@@ -186,6 +189,7 @@
 				C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */,
 				C82C211925C771CA00CCCDF7 /* ThemeManager.swift in Sources */,
 				C803A1F225CF98DF00366CEB /* TextManager.swift in Sources */,
+				69BFB696304B8B1E007EAB18 /* ShortcutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +241,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -298,6 +303,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -324,10 +330,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Notebar/Notebar.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Notebar/Preview Content\"";
-				DEVELOPMENT_TEAM = F725AN38JF;
+				DEVELOPMENT_TEAM = 9NFFKKH3LM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notebar/Info.plist;
@@ -337,7 +345,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "1.0-alpha";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stakelon.Notebar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazuro.notebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -349,10 +357,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Notebar/Notebar.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Notebar/Preview Content\"";
-				DEVELOPMENT_TEAM = F725AN38JF;
+				DEVELOPMENT_TEAM = 9NFFKKH3LM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notebar/Info.plist;
@@ -362,7 +372,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "1.0-alpha";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stakelon.Notebar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazuro.notebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
