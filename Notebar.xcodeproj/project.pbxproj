@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69749C16304CEB33007AE748 /* NotebarRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotebarRelease.entitlements; sourceTree = "<group>"; };
 		69BFB695304B8B1E007EAB18 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		C803A1F125CF98DF00366CEB /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		C836C55725A0171500BEB83F /* Notebar */ = {
 			isa = PBXGroup;
 			children = (
+				69749C16304CEB33007AE748 /* NotebarRelease.entitlements */,
 				C836C55825A0171500BEB83F /* AppDelegate.swift */,
 				C803A1F125CF98DF00366CEB /* TextManager.swift */,
 				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
@@ -356,7 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Notebar/Notebar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Notebar/NotebarRelease.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
